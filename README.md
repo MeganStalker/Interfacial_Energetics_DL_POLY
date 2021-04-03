@@ -11,18 +11,18 @@ This bundle of shell and python scripts determines the interfacial energy and wo
 **2. 2extract.sh**
 
 * Extracts the necessary data from the relevant DL_POLY input (CONFIG, CONTROL) and output files (SOLVAT, OUTPUT)
-* Appends the data to cou_energies.out, vdw_energies.out, timestep.out, ratios.out, configenergies.out and volume.out 
+* Appends the data to the cou_energies.out, vdw_energies.out, timestep.out, ratios.out, configenergies.out and volume.out output files
 * Calls the remaining scripts (3work.py, 4blockcoav.py and 5normalise.py)
 
 **3.	3work.py**	
 
 * Calculates the instantaneous work of adhesion (in kcal mol<sup>-1</sup>) by combining the Coulmbic and Van der waals energy
-* Appends the instantaneous work of adhesion to work_adhesion_data.out
+* Appends the instantaneous work of adhesion to the work_adhesion_data.out output file
 
 **4.	4blockcoav.py**	
 
 * Determines whether the instantaneous work of adhesion and configurational energy have converged using [dlmontepython](https://gitlab.com/dl_monte/dlmontepython).
-* The point of convergence and the correlation function is used to calculate the work of adhesion data and the interfacial energy 
+* The point of convergence and the correlation function is used to calculate the work of adhesion data and to estimate the interfacial energy 
 
 **5.	5normalise.py**	
 
