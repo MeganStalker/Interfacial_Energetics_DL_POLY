@@ -11,13 +11,13 @@ This bundle of shell and python scripts determines the interfacial energy and wo
 **2. 2extract.sh**
 
 * Extracts the necessary data from the relevant DL_POLY input (CONFIG, CONTROL) and output files (SOLVAT, OUTPUT)
-* Appends to cou_energies.out, vdw_energies.out, timestep.out, ratios.out, configenergies.out, volume.out 
+* Appends the data to cou_energies.out, vdw_energies.out, timestep.out, ratios.out, configenergies.out and volume.out 
 * Calls the remaining scripts (3work.py, 4blockcoav.py and 5normalise.py)
 
 **3.	3work.py**	
 
 * Calculates the instantaneous work of adhesion (in kcal mol<sup>-1</sup>) by combining the Coulmbic and Van der waals energy
-* Appends to work_adhesion_data.out
+* Appends the instantaneous work of adhesion to work_adhesion_data.out
 
 **4.	4blockcoav.py**	
 
@@ -26,8 +26,10 @@ This bundle of shell and python scripts determines the interfacial energy and wo
 
 **5.	5normalise.py**	
 
-* The average work of adhesion and interfacial energy per unit area (kcal mol<sup>-1</sup> Å<sup>-2</sup>)
-* The associated standard error for the average work of adhesion and interfacial energy per unit area (kcal mol<sup>-1</sup> Å<sup>-2</sup>)
+* Calculates the average work of adhesion and estimates the interfacial energy per unit area (kcal mol<sup>-1</sup> Å<sup>-2</sup>)
+* Calculates the associated standard error for the average work of adhesion and interfacial energy per unit area (kcal mol<sup>-1</sup> Å<sup>-2</sup>)
 
 **6.	6calcint.py**
-* Calculates the cellulose-vacuum, cellulose-water and water-vacuum interfacial energies (J m<sup>-2</sup>) and the cellulose-water work of adhesion (J m<sup>-2</sup>) as well as the corresponding uncertainties
+
+* Estimates the average cellulose-cellulose, cellulose-vacuum, cellulose-water, water-vacuum, water-water system energies (J m<sup>-2</sup>) as well as the corresponding uncertainties and appends to the relevant output files
+* Calculates the average cellulose-water work of adhesion (J m<sup>-2</sup>) and estimates the average cellulose-vacuum, cellulose-water and water-vacuum interfacial energies (J m<sup>-2</sup>) as well as the corresponding uncertainties and appends to the relevant output files
