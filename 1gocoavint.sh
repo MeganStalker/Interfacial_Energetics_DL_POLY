@@ -12,7 +12,7 @@
 
 # 2.	2extract.sh:	Extracts the necessary data from the relevant DL_POLY input (CONFIG, CONTROL) and output files (SOLVAT, OUTPUT) to cou_energies.out, vdw_energies.out, timestep.out, ratios.out, configenergies.out, volume.out. Calls the remaining scripts (3work.py, 4blockcoav.py and 5normalise.py)
 
-# 3.	3work.py:	Calculates the instantaneous work of adhesion (in kcalmol-1) by combining the Coulmbic and Van der waals energy and appends to work_adhesion_data.out
+# 3.	3work.py:	Calculates the instantaneous work of adhesion (in kcalmol-1) by combining the Coulombic and Van der waals energy and appends to work_adhesion_data.out
 
 # 4.	4blockcoav.py:	Determines whether the instantaneous work of adhesion and configurational energy have converged using dlmontepython. The point of convergence and the correlation function is used to calculate the work of adhesion data and the interfacial energy 
 
