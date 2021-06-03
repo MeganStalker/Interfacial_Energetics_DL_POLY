@@ -16,7 +16,7 @@ This bundle of shell and python scripts determines the interfacial energy and wo
 
 **3.	3work.py**	
 
-* Calculates the instantaneous work of adhesion (in kcal mol<sup>-1</sup>) by combining the Coulmbic and Van der waals energy
+* Calculates the instantaneous work of adhesion (in kcal mol<sup>-1</sup>) by combining the Coulombic and Van der waals energy
 * Appends the instantaneous work of adhesion to the work_adhesion_data.out output file
 
 **4.	4blockcoav.py**	
